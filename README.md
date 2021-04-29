@@ -79,10 +79,9 @@ and place it in the `datasets` folder in this package. Then, in the `src` folder
 **Communities and Crime** - Communities within the United States. The data combines socio-economic data from the
  1990 US
  Census, law enforcement data from the 1990 US LEMAS survey, and crime data from the 1995 FBI UCR. We added a column
- for plurality race, which we used to divide communities into groups. http://archive.ics.uci.edu/ml/datasets/communities+and+crime
+ for plurality race, which we used to divide communities into groups. https://github.com/algowatchpenn/GerryFair/tree/master/dataset
  
- Downloading instructions: On the provided webpage, open "Data Folder" and download `communities.data`. Rename to
-  `communities.csv` and place in the `datasets` folder. Then, in the `src` folder of this package, run the script
+ Downloading instructions: On the provided webpage, download `communities.csv` and place in the `datasets` folder. Then, in the `src` folder of this package, run the script
    `clean_communities_data.py` which will create the the file `communities_cleaned.csv` which is formatted to be used
     with our pre-configured code.
 
