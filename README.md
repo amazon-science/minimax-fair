@@ -32,7 +32,7 @@ Our algorithms support the following model classes:
 To install the package and prepare for use, run:
 
 ```
-https://github.com/amazon-research/minimax-fair.git
+git clone https://github.com/amazon-research/minimax-fair.git
 ```
 
 The current version of the package uses the following packages: pandas, numpy, sklearn, matplotlib, pytorch, and
