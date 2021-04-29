@@ -64,8 +64,9 @@ We have provided a brief description of each dataset, along with a link to a pag
 
 **Adult** - Predict whether income exceeds $50K/yr based on census data. http://archive.ics.uci.edu/ml/datasets/Adult
 
-Downloading instructions: On the linked webpage click the "Data Folder" link and download `adult.data` rename the
- file to `adult.csv` and place it in the provided `datasets` folder in this package.
+Downloading instructions: On the linked webpage click the "Data Folder" link and download `adult.data`. Rename the file to `adult.csv`
+and place it in the `datasets` folder in this package. Then, in the `src` folder of this package, run the script
+`clean_adult_data.py` which will create the the file `adult_cleaned.csv` which is formatted to be usedwith our pre-configured code.
 
 **Seoul Bike Sharing** - The dataset contains count of public bikes rented at each hour in Seoul Bike sharing System
  with
