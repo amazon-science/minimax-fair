@@ -769,10 +769,10 @@ def rescale_feature_matrix(X):
     :param X: Feature matrix
     :return: X': a rescaled feature matrix where large values are scaled down. Modifies X in place
     """
+    X = X.astype(float)
     # X is a numsamples by numfeatures matrix, X[:, k] represents the kth columnn
     for col in range(X.shape[1]):
         magnitude = np.floor(np.log10(max(abs(X[:, col]))))  # Finds the order of magnitude of max val
         X[:, col] /= np.power(10, magnitude)  # Put all feature values in the range [-1, 1]
 
     return X  # X is modified in place, but we return it so function returns reference to its input for chaining
-
