@@ -7,7 +7,7 @@ def get_dataset_features(dataset):
     """
     groups_to_drop = []
     if dataset == 'COMPAS':
-        path = 'datasets/compas-scores.csv'
+        path = 'datasets/compas-scores-two-years.csv'
         label = 'two_year_recid'  # binary
         group = 'race'  # 'sex' also an option
         usable_features = ['race', 'age', 'sex', 'priors_count', 'c_charge_degree', 'juv_fel_count']
@@ -15,14 +15,14 @@ def get_dataset_features(dataset):
         groups_to_drop = ['race@Asian', 'race@Native American']
         is_categorical = True
     elif dataset == 'COMPAS_full':
-        path = 'datasets/compas-scores.csv'
+        path = 'datasets/compas-scores-two-years.csv'
         label = 'two_year_recid'  # binary
         group = 'race'  # 'sex' also an option
         usable_features = ['race', 'age', 'sex', 'priors_count', 'c_charge_degree', 'juv_fel_count']
         categorical_columns = []
         is_categorical = True
     elif dataset == 'COMPAS_race_and_gender':
-        path = 'datasets/compas-scores.csv'
+        path = 'datasets/compas-scores-two-years.csv'
         label = 'two_year_recid'  # binary
         group = ['race', 'sex']
         usable_features = ['race', 'age', 'sex', 'priors_count', 'c_charge_degree', 'juv_fel_count']
