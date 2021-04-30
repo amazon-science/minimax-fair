@@ -119,8 +119,8 @@ Downloading instructions: In the Data Folder, download `forestfires.csv` directl
 **Bank Marketing** - The data is related with direct marketing campaigns (phone calls) of a Portuguese banking
  institution. The classification goal is to predict if the client will subscribe a term deposit (variable y). https://archive.ics.uci.edu/ml/datasets/bank+marketing
  
- Downloading instructions: In the Data Folder, download `bank.zip`, extract the folder, and move the file `bank-full
- .csv` into the `datasets` folder.
+ Downloading instructions: In the Data Folder, download `bank.zip`, extract the folder, and move the files `bank-full
+ .csv` and `bank.csv` into the `datasets` folder.
 
 **Student** - Predict student performance in secondary education (high school). https://archive.ics.uci.edu/ml/datasets/student+performance
 
