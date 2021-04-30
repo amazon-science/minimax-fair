@@ -4,7 +4,6 @@
 import numpy as np
 
 
-# TODO: consider saving/reading files in compressed format (likely not necessary)
 def read_dataset_from_file(file_path, ):
     data = np.load(file_path, allow_pickle=True)
     X = data['X']
