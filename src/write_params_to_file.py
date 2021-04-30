@@ -12,7 +12,6 @@ def write_params_to_os(dirname, params_list):
 
     final_path = os.path.join(dirname, 'settings.txt')
 
-    # TODO: see if exception handling is needed
     with open(final_path, 'w') as f:
         for item in params_list:
             f.write(f'{item}\n')
