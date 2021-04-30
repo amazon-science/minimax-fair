@@ -124,6 +124,8 @@ Downloading instructions: In the Data Folder, download `forestfires.csv` directl
 **Student** - Predict student performance in secondary education (high school). https://archive.ics.uci.edu/ml/datasets/student+performance
 
 Downloading instructions: In the Data folder, download `student.zip`, extract, and move the file `student-mat.csv` to the `datasets` folder.
+If there are errors, the ";" characters may need to be replaced with ", " to meet the csv format. This can also be done by using the data-to-columns
+tool in Excel and using the ";" character as a delimiter to split the first column. 
 
 **Wine** - Using chemical analysis determine the origin of wines. https://archive.ics.uci.edu/ml/datasets/wine+quality
 
