@@ -31,7 +31,14 @@ def setup_matrices(path, label, groups, usable_features=None, drop_group_as_feat
     if isinstance(groups, str):
         groups = [groups]
 
-    df = pd.read_csv(path)
+    # Determine what kind of delimiter to use
+    delim = ','
+    with open(path) as f:
+        for _ in range(2):
+            if ';' in f.readline():
+                delim = ';'
+
+    df = pd.read_csv(path, sep=delim)
 
     if len(groups_to_drop) > 0:
         for specific_group in groups_to_drop:
@@ -105,6 +112,8 @@ def setup_matrices(path, label, groups, usable_features=None, drop_group_as_feat
 
     # Determine if the dataset is binary by looking at the labels (y)
     is_binary = (len(set(np.unique(y))) == 2)
+    lb = LabelBinarizer()
+    y = lb.fit_transform(y)
 
     if verbose:
         print('Here are the results from setting up your dataset from a csv:')
