@@ -74,7 +74,8 @@ and place it in the `datasets` folder in this package. Then, in the `src` folder
  corresponding Weather data and Holidays information. https://archive.ics.uci.edu/ml/datasets/Seoul+Bike+Sharing+Demand
  
  Downloading instructions: On the linked webpage click the "Data Folder" link, download `SeoulBikeData.csv`,  and place
-  in the `datasets` folder. If there are issues, make sure that the csv is saved in utf-8 encoding.
+  in the `datasets` folder. If there are issues, make sure that the csv is saved in utf-8 encoding, and delete the "∞" symbol
+  in the column headers "Temperature(∞C)" and "Dew point temperature(∞C)".
 
 **Communities and Crime** - Communities within the United States. The data combines socio-economic data from the
  1990 US
