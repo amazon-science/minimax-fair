@@ -60,7 +60,7 @@ def get_dataset_features(dataset):
         is_categorical = False
     elif dataset == 'Bike':
         path = 'datasets/SeoulBikeData.csv'
-        label = 'RentedBikesNormalized'
+        label = 'Rented Bike Count'
         group = 'Seasons'
         usable_features = ['Seasons', 'Hour', 'Temperature(C)', 'Humidity(%)', 'Wind speed (m/s)', 'Visibility (10m)',
                            'Dew point temperature(C)', 'Solar Radiation (MJ/m2)',
