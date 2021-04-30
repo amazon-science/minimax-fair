@@ -88,7 +88,7 @@ and place it in the `datasets` folder in this package. Then, in the `src` folder
 **COMPAS** - Data from Broward County Clerk’s Office, Broward County Sherrif's Office, Florida Department of Corrections
 , compiled by ProPublica. https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis
 
- Downloading instructions:  Go to the linked github, download the file `compas-scores.csv` and place in the `datasets`
+ Downloading instructions:  Go to the linked github, download the file `compas-scores-two-years.csv` and place in the `datasets`
   folder.
 
 **Credit** - German Credit Data for predicting good and bad credit risks, compiled by Prof Dr. Hans Hoffman. https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
