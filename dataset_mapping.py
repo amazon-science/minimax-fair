@@ -76,10 +76,10 @@ def get_dataset_features(dataset):
         is_categorical = True 
     elif dataset == 'Fires':
         path = 'datasets/forestfires.csv'
-        label = 'AreaNormalized'
+        label = 'area'
         group = 'month'
-        usable_features = ['X', 'y', 'month', 'day', 'FFMC', 'DMC', 'DC', 'ISI', 'temp',
-                           'RH', 'wind', 'rain', 'AreaNormalized']
+        usable_features = ['X', 'Y', 'month', 'day', 'FFMC', 'DMC', 'DC', 'ISI', 'temp',
+                           'RH', 'wind', 'rain', 'area']
         categorical_columns = ['day', 'month']  # non-linear (but monotone) numerical columns on scale such as 1-4
         is_categorical = False
     elif dataset == 'Heart':
