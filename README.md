@@ -1,4 +1,4 @@
-# MinimaxFair - Convergent Algorithms for (Relaxed) Minimax Fairness
+# MinimaxFair - Convergent Algorithms for (Relaxed) Minimax Group Fairness
 
 
 MinimaxFair is a Python package for training ML models for (relaxed) minimax group fairness as discussed in https://arxiv.org/abs/2011.03108
