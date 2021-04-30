@@ -113,7 +113,7 @@ def setup_matrices(path, label, groups, usable_features=None, drop_group_as_feat
     # Determine if the dataset is binary by looking at the labels (y)
     is_binary = (len(set(np.unique(y))) == 2)
     lb = LabelBinarizer()
-    y = lb.fit_transform(y)
+    y = lb.fit_transform(y).flatten()
 
     if verbose:
         print('Here are the results from setting up your dataset from a csv:')
