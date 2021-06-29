@@ -68,7 +68,7 @@ def get_dataset_features(dataset):
         categorical_columns = ['Seasons', 'Holiday', 'Functioning']
         is_categorical = False
     elif dataset == 'Credit':
-        path = 'datasets/german_credit.csv'
+        path = 'datasets/german_cleaned.csv'
         label = 'Creditability'
         group = 'Sex & Marital Status'
         usable_features = None  # all

@@ -95,7 +95,10 @@ and place it in the `datasets` folder in this package. Then, in the `src` folder
 **Credit** - German Credit Data for predicting good and bad credit risks, compiled by Prof Dr. Hans Hoffman. https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
 
  Downloading instructions: Open "Data Folder" and download `german.data`. Rename to `german.csv` and place in `datasets`
-  folder.
+  folder. Then, in the `src` folder of this package, run the script
+  `setup_credit_dataset.py` which will create the the file `german_cleaned.csv` which is formatted to be used 
+  with our pre-configured code.
+
 
 **Default** - This dataset contains information on default payments, demographic factors, credit data, history of
  payment
